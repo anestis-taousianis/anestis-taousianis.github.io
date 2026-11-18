@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Anestis</title>
+    <title>Anestis Taousianis | Electronic Engineer & Junior Developer</title>
+    <meta name="description" content="Portfolio of Anestis Taousianis, Electronic Engineer (MSc) moving into software development. Embedded, IoT and web projects.">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
@@ -26,11 +24,11 @@
             </div>
 
             <nav>
-                <div class="togglebtn">
+                <button class="togglebtn" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
 
                 <ul class="navlinks">
                     <li><a href="#home">Home</a></li>
@@ -43,25 +41,26 @@
 
         <div class="container">
             <div class="hero-pic">
-                <img src="images/main_photo.jpg" alt="profile photo">
+                <img src="images/main_photo.jpg" alt="Portrait of Anestis Taousianis">
             </div>
 
             <div class="hero-text">
-                <h5>Hi I'm <span class="input"></span></h5>
+                <h5>Hi, I'm</h5>
                 <h1>Anestis Taousianis</h1>
+                <h3><span class="input">Electronic Engineer</span></h3>
                 <p>
-                    I am learning Front-End Development and I enjoy creating simple and functional websites.
+                    Electronic Engineer (MSc) with 10 years of industrial experience, moving into software development.
+                    I build embedded, IoT and web projects.
                 </p>
 
                 <div class="btn-group">
-                    <a href="#" class="btn active">Download CV</a>
+                    <a href="CV_Anestis_Taousianis.pdf" class="btn active" download>Download CV</a>
                     <a href="#contact" class="btn">Contact</a>
                 </div>
 
                 <div class="social">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/anestis-taousianis" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/anestis-taousianis" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -87,9 +86,27 @@
         </div>
 
         <div class="skill-card">
-            <i class="fa-brands fa-js"></i>
-            <h3>JavaScript</h3>
-            <p>DOM manipulation & logic</p>
+            <i class="fa-solid fa-code"></i>
+            <h3>C++</h3>
+            <p>Firmware for microcontrollers</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-solid fa-microchip"></i>
+            <h3>IoT & Embedded</h3>
+            <p>ESP32, PlatformIO, Blynk, sensors</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-android"></i>
+            <h3>Android Studio</h3>
+            <p>Small mobile apps</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-wordpress"></i>
+            <h3>WordPress</h3>
+            <p>Building and managing websites</p>
         </div>
     </div>
 </section>
@@ -97,16 +114,35 @@
 <!-- PROJECTS -->
 <section id="projects" class="section reveal">
     <h2>Projects</h2>
-    <p class="coming-soon">Projects will be added soon.</p>
+
+    <div class="skills-container">
+        <div class="skill-card project-card">
+            <i class="fa-solid fa-wind"></i>
+            <h3>Portable Air Quality Station</h3>
+            <p>Master's thesis: a battery-powered IoT station built on an ESP32 with MQ135 and MQ7 sensors, programmed in C++ with PlatformIO, with live readings in the Blynk app.</p>
+            <a class="btn-dark" href="https://github.com/anestis-taousianis/air-quality-monitor-esp32">View on GitHub</a>
+        </div>
+
+        <div class="skill-card project-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>This Portfolio</h3>
+            <p>A responsive portfolio website built with HTML, CSS and JavaScript, hosted on GitHub Pages.</p>
+            <a class="btn-dark" href="https://github.com/anestis-taousianis/anestis-taousianis.github.io">View on GitHub</a>
+        </div>
+    </div>
 </section>
 
 <!-- CONTACT -->
 <footer id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:anestis_ta@hotmail.com">anestis_ta@hotmail.com</a></p>
+    <p>
+        <a href="https://linkedin.com/in/anestis-taousianis">LinkedIn</a> ·
+        <a href="https://github.com/anestis-taousianis">GitHub</a>
+    </p>
+    <p class="location">Halkidiki, Greece · Open to remote work</p>
 </footer>
 
-<!-- JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
 <script src="script.js"></script>
 
